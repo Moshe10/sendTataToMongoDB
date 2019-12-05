@@ -1,0 +1,7 @@
+.test {
+    display: -webkit-box;
+    overflow: hidden;
+    color: red;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
