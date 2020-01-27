@@ -8,6 +8,8 @@ import Modals from './modals';
 import NyFullScreen from './fullScreen';
 import ProjectBox from './projectBox';
 import MyTest from './myTest';
+import {Example} from './editor';
+import RouteApp from './router/router';
 // let data = require('./data');
 
 class App extends Component {
@@ -38,7 +40,9 @@ class App extends Component {
         {/* <Modals/> */}
         {/* <NyFullScreen/> */}
         {/* <ProjectBox/> */}
-        <MyTest/>
+        {/* <MyTest/> */}
+        {/* <Example/> */}
+        <RouteApp />
       </div>
     );
   }
