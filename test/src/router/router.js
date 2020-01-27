@@ -18,7 +18,19 @@ class RouteApp extends Component {
             )
         }
 
-        function Topics() {
+        function Topic({match}) {
+            const topic = topics.find(({ id }) => id === match.params.topicId);
+            
+            return (
+                <div>
+                    TOPIC
+              </div>
+            )
+        }
+
+        function Topics({ match }) {
+            console.log('match, ', match);
+
             return (
                 <div>
                     <h1>
@@ -27,12 +39,20 @@ class RouteApp extends Component {
                     <ul>
                         {topics.map(({ name, id }) => (
                             <li key={id}>
-                                <Link to={`/topics/${id}`}>{name}</Link>
+                                <Link to={`${match.url}/${id}`}>{name}</Link>
                             </li>
                         ))}
                     </ul>
+
+                    <hr />
+
+                    <Route path={`${match.path}/:topicId`} component={Topic} />
                 </div>
             )
+        }
+
+        function Resource() {
+            return <p>RESOURCE</p>
         }
 
         return (
