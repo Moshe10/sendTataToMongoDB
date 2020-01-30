@@ -10,6 +10,7 @@ import ProjectBox from './projectBox';
 import MyTest from './myTest';
 import {Example} from './editor';
 import RouteApp from './router/router';
+import Main from './login-router/main';
 // let data = require('./data');
 
 class App extends Component {
@@ -42,7 +43,8 @@ class App extends Component {
         {/* <ProjectBox/> */}
         {/* <MyTest/> */}
         {/* <Example/> */}
-        <RouteApp />
+        {/* <RouteApp /> */}
+        <Main />
       </div>
     );
   }
