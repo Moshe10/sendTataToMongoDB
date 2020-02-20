@@ -14,7 +14,12 @@ import Main from './login-router/main';
 // let data = require('./data');
 
 class App extends Component {
-
+  constructor(props) {
+    super(props)
+    this.state = {
+      test: true
+    }
+  }
   // sendData(){
   //   // console.log(data);
     
@@ -32,6 +37,7 @@ class App extends Component {
 
   render() {
     // this.str('_bugs');
+     
     return (
       <div>
        {/* <button onClick={() => this.sendData()}>send data</button> */}
