@@ -11,6 +11,8 @@ import MyTest from './myTest';
 import {Example} from './editor';
 import RouteApp from './router/router';
 import Main from './login-router/main';
+import Iframe from './iframe';
+import Location from './location';
 // let data = require('./data');
 
 class App extends Component {
@@ -50,7 +52,9 @@ class App extends Component {
         {/* <MyTest/> */}
         {/* <Example/> */}
         {/* <RouteApp /> */}
-        <Main />
+        {/* <Main /> */}
+        {/* <Iframe/> */}
+        <Location/>
       </div>
     );
   }
