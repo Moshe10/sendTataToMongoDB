@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Spinner } from 'reactstrap';
 
 class Location extends Component {
   constructor(props) {
@@ -11,7 +12,7 @@ class Location extends Component {
 
   position = async () => {
     await navigator.geolocation.getCurrentPosition(
-      position => this.setState({ 
+      position => this.setState({
         latitude: position.coords.latitude, 
         longitude: position.coords.longitude
       }, () => console.log(this.state))
@@ -26,6 +27,7 @@ class Location extends Component {
     return (
       <div>
         <button onClick={this.position} className='Filter'>Filter</button>
+        <div>טוען, לא לזוז <Spinner size="sm" color="primary" /></div>
       </div>
     );
   }
